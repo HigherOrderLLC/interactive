@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3D Walkable Room • HTML5 + Three.js</title>
+  <style>
+    html, body { height: 100%; margin: 0; overflow: hidden; background: #0b0f17; }
+    #app { position: fixed; inset: 0; }
+    .overlay { position:absolute; inset:0; display:grid; place-items:center; background:rgba(0,0,0,.7); color:#e6edf3; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; z-index:10; }
+    .overlay.hidden { display:none; }
+    .card { max-width:720px; background:rgba(18,24,38,.9); border:1px solid #263040; border-radius:14px; padding:20px; box-shadow:0 10px 40px rgba(0,0,0,.35); }
+    .start { padding:12px 18px; font-size:16px; cursor:pointer; border-radius:10px; border:1px solid #38527a; background:#1a2b46; color:#dce7ff; }
+    .hud { position:absolute; left:12px; bottom:12px; z-index:2; color:#c9d4e5; font:12px/1.2 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background:rgba(0,0,0,.35); padding:8px 10px; border-radius:10px; border:1px solid rgba(90,120,170,.35); }
+    .crosshair { position:absolute; left:50%; top:50%; width:14px; height:14px; margin:-7px 0 0 -7px; z-index:1; opacity:.55; }
+    .crosshair:before, .crosshair:after { content:""; position:absolute; background:#cfe1ff; }
+    .crosshair:before { left:6px; top:0; width:2px; height:14px; }
+    .crosshair:after { top:6px; left:0; height:2px; width:14px; }
+    .toast { position:absolute; left:50%; transform:translateX(-50%); top:12px; padding:8px 12px; border-radius:10px; background:rgba(17,25,40,.85); border:1px solid rgba(90,120,170,.35); color:#dfe9ff; font:12px/1.2 ui-monospace, monospace; z-index:999; opacity:0; transition:opacity .25s ease; }
+    .toast.show { opacity:1; }
+    .glow-sphere { filter: blur(8px); }
+  </style>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="app"></div>
+  <div class="crosshair" aria-hidden="true"></div>
+  <div id="overlay" class="overlay">
+    <div class="card">
+      <h2 style="margin:.2rem 0 0.6rem">Walk Around the Room</h2>
+      <p style="margin:0 0 0.6rem">Click <b>Enter</b> to start. Use <b>W/A/S/D</b> to move, <b>mouse</b> to look, <b>Shift</b> to sprint. If pointer lock is blocked by the sandbox, it will switch to <b>drag-to-look</b> (second finger on mobile).</p>
+      <button id="start" class="start">Enter</button>
+    </div>
+  </div>
+  <div class="hud" id="hud">0 fps</div>
+  <div class="toast" id="toast" aria-live="polite"></div>
+
+  <script type="module">
+    import * as THREE from 'three';
+    import { PointerLockControls } from 'three/addons/controls/PointerLockControls.js';
+
+    // ---------- Renderer ----------
+    const container = document.getElementById('app');
+    const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
+    renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+    renderer.setSize(innerWidth, innerHeight);
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
+    renderer.shadowMap.enabled = true;
+    container.appendChild(renderer.domElement);
+
+    // ---------- Scene & Camera ----------
+    const scene = new THREE.Scene();
+
+    const camera = new THREE.PerspectiveCamera(75, innerWidth / innerHeight, 0.1, 1000);
+    camera.rotation.order = 'YXZ';
+
+    const PLAYER = { height: 1.7, radius: 0.35, walkSpeed: 2.5, sprintSpeed: 4.5, friction: 8.0 };
+    camera.position.set(0, PLAYER.height, 4.0);
+
+    // ---------- Controls (Pointer Lock + Fallback) ----------
+    const controls = new PointerLockControls(camera, renderer.domElement);
+    let canUsePointerLock = true;
+    let dragging = false, yaw = camera.rotation.y, pitch = camera.rotation.x, last = {x:0,y:0};
+
+    function enableDragLookFallback(reason) {
+      if (!canUsePointerLock) return;
+      canUsePointerLock = false;
+      renderer.domElement.addEventListener('mousedown', (e)=>{ dragging=true; last.x=e.clientX; last.y=e.clientY; });
+      addEventListener('mousemove', (e)=>{
+        if(!dragging) return; const dx=e.clientX-last.x, dy=e.clientY-last.y; last.x=e.clientX; last.y=e.clientY;
+        yaw   -= dx * 0.0025; pitch -= dy * 0.0025; pitch = Math.max(-Math.PI/2+0.01, Math.min(Math.PI/2-0.01, pitch));
+        camera.rotation.set(pitch, yaw, 0);
+      });
+      addEventListener('mouseup', ()=>{ dragging=false; });
+      showToast('Sandboxed: drag to look (two-finger look on mobile).');
+      console.warn('Pointer lock disabled; using drag-look fallback.', reason);
+    }
+
+    document.addEventListener('pointerlockerror', (e)=> enableDragLookFallback(e));
+
+    // ---------- Input ----------
+    const keys = { w:false, a:false, s:false, d:false, shift:false };
+    const keyMap = { 'KeyW':'w','KeyA':'a','KeyS':'s','KeyD':'d','ShiftLeft':'shift','ShiftRight':'shift' };
+    addEventListener('keydown', e=>{ if(keyMap[e.code]) keys[keyMap[e.code]] = true; });
+    addEventListener('keyup',   e=>{ if(keyMap[e.code]) keys[keyMap[e.code]] = false; });
+
+    // ---------- Touch ----------
+    let touchIdMove=null, joyStart=null, joyVec={x:0,y:0};
+    let touchIdLook=null, lookPrev=null;
+    const maxJoy = 60;
+    addEventListener('touchstart', (e)=>{
+      for(const t of e.changedTouches){
+        if(touchIdMove===null){ touchIdMove=t.identifier; joyStart={x:t.clientX,y:t.clientY}; }
+        else if(touchIdLook===null){ touchIdLook=t.identifier; lookPrev={x:t.clientX,y:t.clientY}; }
+      }
+    }, {passive:true});
+    addEventListener('touchmove', (e)=>{
+      for(const t of e.changedTouches){
+        if(t.identifier===touchIdMove){
+          joyVec.x = Math.max(-1, Math.min(1, (t.clientX-joyStart.x)/maxJoy));
+          joyVec.y = Math.max(-1, Math.min(1, (t.clientY-joyStart.y)/maxJoy));
+        }
+        if(t.identifier===touchIdLook){
+          const dx=t.clientX-lookPrev.x, dy=t.clientY-lookPrev.y; lookPrev={x:t.clientX,y:t.clientY};
+          yaw   -= dx * 0.0025; pitch -= dy * 0.0025; pitch=Math.max(-Math.PI/2+0.01,Math.min(Math.PI/2-0.01,pitch));
+          camera.rotation.set(pitch, yaw, 0);
+        }
+      }
+    }, {passive:true});
+    addEventListener('touchend', (e)=>{
+      for(const t of e.changedTouches){
+        if(t.identifier===touchIdMove){ touchIdMove=null; joyStart=null; joyVec.x=joyVec.y=0; }
+        if(t.identifier===touchIdLook){ touchIdLook=null; lookPrev=null; }
+      }
+    });
+
+    // ---------- Lights ----------
+    const hemi = new THREE.HemisphereLight(0xbdd5ff, 0x202230, 0.6);
+    scene.add(hemi);
+
+    const sun  = new THREE.DirectionalLight(0xffffff, 0.7);
+    sun.position.set(5,8,5); sun.castShadow=true; sun.shadow.mapSize.set(1024,1024); scene.add(sun);
+
+    const ambient = new THREE.AmbientLight(0xffffff, 0.3); scene.add(ambient);
+
+    // ---------- Room ----------
+    const ROOM = { width: 10, depth: 12, height: 3.2 };
+    const matWall  = new THREE.MeshStandardMaterial({ color: 0x30435d, roughness: 0.95, metalness: 0.05 });
+    const matAccent= new THREE.MeshStandardMaterial({ color: 0x3e5779, roughness: 0.9 });
+    const matFloor = new THREE.MeshStandardMaterial({ color: 0x1a2436, roughness: 0.8 });
+    const matCeil  = new THREE.MeshStandardMaterial({ color: 0x0f1522, roughness: 1.0 });
+
+    const floor = new THREE.Mesh(new THREE.PlaneGeometry(ROOM.width, ROOM.depth), matFloor); floor.rotation.x=-Math.PI/2; floor.receiveShadow=true; scene.add(floor);
+    const ceil  = new THREE.Mesh(new THREE.PlaneGeometry(ROOM.width, ROOM.depth), matCeil);  ceil.rotation.x=Math.PI/2; ceil.position.y=ROOM.height; scene.add(ceil);
+
+    const walls = new THREE.Group();
+    const wallThickness=0.2;
+    walls.add(makeWall(ROOM.width, ROOM.height, wallThickness, 0, ROOM.height/2, -ROOM.depth/2));
+    walls.add(makeWall(ROOM.width, ROOM.height, wallThickness, 0, ROOM.height/2,  ROOM.depth/2));
+    walls.add(makeWall(wallThickness, ROOM.height, ROOM.depth, -ROOM.width/2, ROOM.height/2, 0));
+    walls.add(makeWall(wallThickness, ROOM.height, ROOM.depth,  ROOM.width/2,  ROOM.height/2, 0));
+    scene.add(walls);
+
+    const objects = new THREE.Group();
+    const box1 = new THREE.Mesh(new THREE.BoxGeometry(1.6, 0.8, 1.6), matAccent); box1.position.set(-2.2, 0.4, -1.8); box1.castShadow = box1.receiveShadow = true; objects.add(box1);
+    const box2 = new THREE.Mesh(new THREE.BoxGeometry(1.2, 1.2, 1.2), matAccent); box2.position.set(2.4, 0.6, 1.8); box2.castShadow = box2.receiveShadow = true; objects.add(box2);
+    const column = new THREE.Mesh(new THREE.CylinderGeometry(0.35, 0.35, 2.4, 24), matAccent); column.position.set(0, 1.2, 0); column.castShadow = column.receiveShadow = true; objects.add(column);
+    scene.add(objects);
+
+    function makeWall(w,h,d,x,y,z){ const m=new THREE.Mesh(new THREE.BoxGeometry(w,h,d), matWall); m.position.set(x,y,z); m.castShadow=m.receiveShadow=true; m.userData._isWall=true; return m; }
+
+    // ---------- Colliders ----------
+    const colliders=[];
+    const addColliderFromMesh=(m)=>{ m.updateWorldMatrix(true,true); const box=new THREE.Box3().setFromObject(m); colliders.push(box); };
+    walls.children.forEach(addColliderFromMesh); objects.children.forEach(addColliderFromMesh);
+
+    // ---------- Movement & Collision ----------
+    const velocity = new THREE.Vector3();
+    const dir = new THREE.Vector3();
+
+    function update(dt){
+      let ix=0, iz=0;
+      if(keys.w) iz += 1; if(keys.s) iz -= 1; if(keys.a) ix -= 1; if(keys.d) ix += 1;
+      ix += joyVec.x; iz += -joyVec.y;
+
+      dir.set(0,0,0);
+      if(ix||iz){
+        const yawAngle = camera.rotation.y; const sin=Math.sin(yawAngle), cos=Math.cos(yawAngle);
+        const fX=-sin, fZ=-cos; const rX=cos, rZ=-sin;
+        dir.x = fX*iz + rX*ix; dir.z = fZ*iz + rZ*ix; dir.normalize();
+      }
+      const speed = keys.shift ? PLAYER.sprintSpeed : PLAYER.walkSpeed;
+      const targetVX = dir.x*speed, targetVZ = dir.z*speed;
+      const blend = 1 - Math.exp(-PLAYER.friction*dt);
+      velocity.x += (targetVX-velocity.x)*blend; velocity.z += (targetVZ-velocity.z)*blend;
+
+      const next = camera.position.clone(); next.x += velocity.x*dt; next.z += velocity.z*dt; next.y = PLAYER.height;
+      const r = PLAYER.radius; let blockX=false, blockZ=false;
+      for(const box of colliders){ const min=box.min, max=box.max; const minX=min.x-r, maxX=max.x+r, minZ=min.z-r, maxZ=max.z+r; const withinY = (PLAYER.height >= min.y-0.1 && PLAYER.height <= max.y+0.1); if(!withinY) continue;
+        const withinZ=(next.z>=minZ&&next.z<=maxZ); const withinX=(next.x>=minX&&next.x<=maxX);
+        if(withinZ && next.x>minX && next.x<maxX && camera.position.z>=minZ && camera.position.z<=maxZ) blockX=true;
+        if(withinX && next.z>minZ && next.z<maxZ && camera.position.x>=minX && camera.position.x<=maxX) blockZ=true;
+      }
+      if(!blockX) camera.position.x = next.x; else velocity.x=0;
+      if(!blockZ) camera.position.z = next.z; else velocity.z=0;
+    }
+
+    // ---------- Overlay & Start / Loop ----------
+    const overlay = document.getElementById('overlay');
+    const startBtn = document.getElementById('start');
+    const toast = document.getElementById('toast');
+    function showToast(msg){ toast.textContent=msg; toast.classList.add('show'); clearTimeout(showToast._t); showToast._t = setTimeout(()=>toast.classList.remove('show'), 2200); }
+
+    let running=false;
+    const clock = new THREE.Clock();
+    function animate(){ if(!running) return; const dt=Math.min(clock.getDelta(),0.05); update(dt); renderer.render(scene,camera); requestAnimationFrame(animate); updateFps(dt); }
+
+    function updateFps(dt){
+      fpsStats.acc += 1/dt; fpsStats.n++;
+      if(fpsStats.n>=15){ hud.textContent = `${(fpsStats.acc/fpsStats.n)|0} fps`; fpsStats.acc=0; fpsStats.n=0; }
+    }
+    const hud = document.getElementById('hud'); const fpsStats = {acc:0,n:0};
+
+    startBtn.addEventListener('click', ()=>{
+      overlay.classList.add('hidden');
+      running=true; requestAnimationFrame(animate);
+      try { controls.lock(); } catch(e) { enableDragLookFallback(e); }
+    });
+
+    controls.addEventListener('lock', ()=>{});
+    controls.addEventListener('unlock', ()=>{ overlay.classList.remove('hidden'); running=false; });
+
+    addEventListener('click', ()=>{ if(running && canUsePointerLock && !controls.isLocked){ try{ controls.lock(); } catch(e){ enableDragLookFallback(e); } } });
+
+    scene.add(controls.getObject());
+
+    // ---------- Resize ----------
+    addEventListener('resize', ()=>{ camera.aspect=innerWidth/innerHeight; camera.updateProjectionMatrix(); renderer.setSize(innerWidth, innerHeight); });
+  </script>
+</
+
