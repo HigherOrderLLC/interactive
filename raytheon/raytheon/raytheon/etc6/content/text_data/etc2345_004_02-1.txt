@@ -1,0 +1,1 @@
+&tMessage=For the first portion of this workstation you will measure resistance using your DMM. Select a resistor to test by clicking on it. You must test all resistances before proceeding. You may select them in any order.

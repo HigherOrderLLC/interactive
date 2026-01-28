@@ -1,0 +1,1 @@
+&tMessage=<b>No</b>, the diode symbol arrow indicates the direction of current flow when the diode is conducting, or foward biased.<br><br>Click <b>Continue</b> to move on.

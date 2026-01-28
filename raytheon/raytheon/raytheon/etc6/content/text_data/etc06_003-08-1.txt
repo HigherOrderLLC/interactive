@@ -1,0 +1,1 @@
+&tMessage=Good, the DMM is now set to the 1000v scale.<br><br>Click <b>Continue</b> to proceed.

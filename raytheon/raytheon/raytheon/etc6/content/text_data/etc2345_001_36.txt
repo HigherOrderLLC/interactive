@@ -1,0 +1,1 @@
+&tMessage=Correct. The measured resistance of the spark plug wire greatly exceeds specification.

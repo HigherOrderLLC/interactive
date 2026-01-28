@@ -1,0 +1,1 @@
+&tMessage=<b>Correct!</b><br>The current flow remains the same at all locations in a series circuit. Slight variations may be observed due to the sensitivity of the meter and normal power supply fluctuations. However, while performing the amperage measurements the readings obtained were almost identical at all locations in the circuit.<br>Please click <b>Continue</b> to continue.

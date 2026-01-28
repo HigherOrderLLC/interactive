@@ -1,0 +1,1 @@
+&tMessage=Current flows through the relay contacts and the bulbs illuminate.<br><br>The diode is still in reverse bias, preventing current flow through its part of the circuit.<br><br>The relay coil's magnetic field continues to hold the contacts closed.

@@ -1,0 +1,1 @@
+&tMessage=Click the toggle switch to power up the circuit.<BR><BR>Click the Supporting Document button below at any time if you need assistance performing the DMM measurements to perform a voltage measurement across the relay coil.<BR><BR>Select continue when you're ready to proceed.

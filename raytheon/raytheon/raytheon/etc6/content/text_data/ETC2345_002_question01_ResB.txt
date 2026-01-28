@@ -1,0 +1,1 @@
+&tMessage=No, the resistance of the small lamps is greater than the resistance of the large lamps, reducing the current flow enough to prevent the large lamps from illuminating.<br><br>Please click <b>Continue</b> to preceed to the second exercise of this workstation.

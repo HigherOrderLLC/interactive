@@ -1,0 +1,22 @@
+<!--Note: Hard Carriage Returns and Spaces between the CDATA tags will show up in your messages.-->
+
+<simText>
+<!-- index 0 -->
+<textData pageId="etc11Help" index="0">
+<![CDATA[Take a few moments to familiarize yourself with the DMM before you begin this course. Please start by clicking on it.]]>
+</textData>
+
+
+<!-- index 1 -->
+<textData pageId="etc11Help_1" index="1">
+<![CDATA[<b>Directions</b><br>Select one of the three buttons listed above<ul><li>DMM demonstration<li>DMM use<li>Start excercise</ul>]]>
+</textData>
+
+
+<!-- index 2 -->
+<textData pageId="etc11Help_2" index="2">
+<![CDATA[<b>Directions</b><br>1.Drag & drop test leads to meter's input terminals.<br>2. Click on correct rotary switch setting. (DC voltage)<br>3. Drag & drop test leads <b>(Red on square, black on triangle).</b>]]>
+</textData>
+
+
+</simText>

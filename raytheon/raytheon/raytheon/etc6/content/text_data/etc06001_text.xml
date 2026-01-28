@@ -1,0 +1,93 @@
+<!--Note: Hard Carriage Returns and Spaces between the CDATA tags will show up in your messages.-->
+
+<simText>
+<!-- index 0 -->
+<textData pageId="etc06_001_3" index="0">
+<![CDATA[Click the toggle switch to power up the circuit to perform a voltage measurement across the relay coil.<BR><BR>Click the Supporting Document button below at any time if you need information on the meter's function .<BR><BR>Select Continue when you're ready to proceed.]]>
+</textData>
+
+
+<!-- index 1 -->
+<textData pageId="etc06_001_4" index="1">
+<![CDATA[Instructions:<BR>1. Drag and drop test leads to meter's input terminals.<br> 2. Click on appropriate rotary switch setting.<BR>3. Drag and drop test leads to coil terminals (D & F) on the relay<BR><b>Note: Remove mouse pointer from test lead to have DMM operate properly.</b><BR>Click Continue when you are ready.]]>
+</textData>
+
+
+<!-- index 2 -->
+<textData pageId="etc06_001_5" index="2">
+<![CDATA[Instructions:<BR>1. Click the Range button on the DMM to select the 4000 V scale.]]>
+</textData>
+
+
+<!-- index 3 -->
+<textData pageId="etc06_001_7-1" index="3">
+<![CDATA[Great, the DMM is now set to the 4000 V scale.  Click Continue to proceed.]]>
+</textData>
+
+
+<!-- index 4 -->
+<textData pageId="etc06_001_8" index="4">
+<![CDATA[Instructions: <BR>1. Click the MIN-MAX button on the DMM to select the record feature.  Click Continue to proceed.]]>
+</textData>
+
+
+<!-- index 5 -->
+<textData pageId="etc06_001_9" index="5">
+<![CDATA[Instructions: <BR>1. Click the Peak MIN-MAX button on the DMM to select the 1ms time record setting and record the highest reading.  Click Continue to proceed.]]>
+</textData>
+
+
+<!-- index 6 -->
+<textData pageId="etc06_001_10" index="6">
+<![CDATA[Instructions: <BR>1. Place your cursor over the push button microswitch on the electrical project board to operate the relay and obtain the maximum voltage measurement.  Click Continue to proceed.]]>
+</textData>
+
+
+<!-- index 7 -->
+<textData pageId="etc06_001_11" index="7">
+<![CDATA[Instructions: <BR>1. Click on the MIN-MAX button on the DMM to observe the minimum voltage readings.  Click Continue to proceed.]]>
+</textData>
+
+
+<!-- index 8 -->
+<textData pageId="etc06_001_12" index="8">
+<![CDATA[During the MIN/MAX measurements there was a steady tone emitted from the DMM.  This indicates that the:]]>
+</textData>
+
+
+<!-- index 9 -->
+<textData pageId="etc06_001_12-1" index="9">
+<![CDATA[I'm sorry, a low battery indicator would appear on the display if the battery needed to be replaced.  The tone emitted from the DMM indicates the measurement has exceeded the DMM scale setting. Please try again.]]>
+</textData>
+
+
+<!-- index 10 -->
+<textData pageId="etc06_001_12-2" index="10">
+<![CDATA[Although the manufacturer recommends calibration once a year, the tone emitted from the DMM indicates that the measurement has exceeded the DMM setting.  Please try again.]]>
+</textData>
+
+
+<!-- index 11 -->
+<textData pageId="etc06_001_12-3" index="11">
+<![CDATA[Correct!  The measurement obtained with the DMM has exceeded the DMM scale setting, also resulting in a reading of -OL on the display.]]>
+</textData>
+
+
+<!-- index 12 -->
+<textData pageId="etc06_001_12-4" index="12">
+<![CDATA[I'm sorry, the correct answer for the DMM emitting the tone is that the measurement has exceeded the DMM scale setting.  Please try again.]]>
+</textData>
+
+
+<!-- index 13 -->
+<textData pageId="etc06_001_13" index="13">
+<![CDATA[Upon removing the cover from the relay, the relay is found to be defective.  This relay uses a resistor parallel to the coil for suppressing voltage spikes.  The resistor's soldered lead connections have come apart on one side of the resistor.  Click Continue to proceed.]]>
+</textData>
+
+<!-- index 14 -->
+<textData pageId="etc06_001_Intro" index="14">
+<![CDATA[For this portion of the exercise in this workstation you will:<br><br> 1. Measure the voltage changes across the relay coil while operating the circuit, using the MIN-MAX feature of the DMM<br> 2. Observe the minimum and maximum voltages.<br> 3. Determine the effects on a circuit when a relay controls a load.<br><br>  Please click Continue when you are ready to move forward.]]>
+</textData>
+
+
+</simText>

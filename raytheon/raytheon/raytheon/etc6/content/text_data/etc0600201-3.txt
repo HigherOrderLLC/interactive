@@ -1,0 +1,1 @@
+&tMessage=When the push button switch is closed, current flows through the relay coil.<br><br>This generates a magnetic field, represented here as lines of force.

@@ -1,0 +1,1 @@
+&tMessage=Instructions:<br>1. Drag and drop test leads to meter's input terminals.<br>2. Click on appropriate rotary switch setting.<br>3. Drag and drop the test leads to the correct locations on the       HVAC ambient air temperature sensor.<br><br><b>Note: Remove mouse pointer from lead to allow DMM to               operate properly.

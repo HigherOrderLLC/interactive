@@ -1,0 +1,1 @@
+&tMessage=For this portion of the exercise in this workstation you will:<BR>1.Measure the voltage across the relay coil while operating the circuit, using the MIN-Max feature of the DMM.<BR>2. Observe the minimum and maximum voltages.<br>3. Determine the effects on a circuit when a relay controls loads.<br><br>Please click continue when you are ready to move forward.

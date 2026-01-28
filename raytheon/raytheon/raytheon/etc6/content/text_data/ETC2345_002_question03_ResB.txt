@@ -1,0 +1,1 @@
+&tMessage=I'm sorry. the total of the voltage drops in a series circuit equals the source voltage. Amperage cannot be determined by measuring voltage unless the resistance of the circuit is also known and calculated using Ohms Law.<br><br>Please click <b>Continue</b>.

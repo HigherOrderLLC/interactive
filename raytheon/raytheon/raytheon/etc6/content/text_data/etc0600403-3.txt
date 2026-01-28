@@ -1,0 +1,1 @@
+&tMessage=diode's dropping resistance lead placement orientation when the diode is reverse bias

@@ -1,0 +1,1 @@
+&tMessage=As the magnetic field collapses, the magnetic lines of force pass over the coil and a reversed voltage is induced.<br><br>The voltage will be of opposite polarity to the previous example.

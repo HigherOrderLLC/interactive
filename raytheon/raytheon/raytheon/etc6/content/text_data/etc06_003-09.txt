@@ -1,0 +1,1 @@
+&tMessage=<b>1.</b> Click the MIN-MAX button on the DMM to select the record feature.

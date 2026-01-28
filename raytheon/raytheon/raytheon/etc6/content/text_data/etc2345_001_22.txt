@@ -1,0 +1,1 @@
+&tMessage=Does the measured value fall within the specified range of 1.21 kOHM to 1.28 kOHM?

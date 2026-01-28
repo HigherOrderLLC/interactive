@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<TITLE>Simulation</TITLE>
+
+<script language="JavaScript">
+<!--
+function launch(newURL, newName, newFeatures, orgName) {
+  var remote = open(newURL, newName, newFeatures);
+  if (remote.opener == null)
+    remote.opener = window;
+  remote.opener.name = orgName;
+  return remote;
+}
+function launchPageone() {
+  myRemote = launch("fromcd_frameset.html", "PROPEL", "height=*,width=*,channelmode=1,dependent=0,directories=0,fullscreen=1,location=0,menubar=1,resizable=0,scrollbars=0,status=0,toolbar=0", "Launcher");
+}
+//-->
+</script>
+
+</head>
+<body bgcolor=#FFFFFF onLoad="javascript:launchPageone()" marginheight=0 marginwidth=0 leftmargin=0 topmargin=0>
+
+<table width=100% height=100% cellpadding=0 cellspacing=0 border=0>
+ <tr>
+  <td align=center>
+   <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+     <td>
+      <a href="javascript:launchPageone()">
+       Launch the Simulation</a></td>
+    </tr>
+   </table></td>
+ </tr>
+</table>
+
+</body>
+</html>

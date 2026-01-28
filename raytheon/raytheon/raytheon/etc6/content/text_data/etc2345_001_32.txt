@@ -1,0 +1,1 @@
+&tMessage=For the temperature of 70 degrees the resistance measured with the DMM is within specifications.  Please try again.

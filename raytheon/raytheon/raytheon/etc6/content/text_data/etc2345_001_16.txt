@@ -1,0 +1,1 @@
+&tMessage=This is not the correct adapter to use on this component. Click Continue to make another selection.

@@ -1,0 +1,58 @@
+<!--Note: Hard Carriage Returns and Spaces between the CDATA tags will show up in your messages.-->
+
+<simText>
+<!-- index 0 -->
+<textData pageId="etc06_003-03" index="0">
+<![CDATA[In the next portion of the excercise, a diode is placed in the circuit parallel to the relay coil while the relay is active. The diode is reverse-biased when supply voltage is applied. A light-emitting diode (LED) is used to show the effects the diode has on the circuit. Pay attention to it during your circuit tests.<br><br>In an LED, a small lens is built into the diode so the light can be seen. When the LED is forward-biased, it illuminates. When the LED is reverse-biased, it prevents current flow. The LED operates at about 1.5 V so a dropping resistor is needed to prevent damage to the LED.<br><br>Select Continue when you're ready to move forward.]]>
+</textData>
+
+
+<!-- index 1 -->
+<textData pageId="etc06_003-04" index="1">
+<![CDATA[Click the toggle switch to power up the circuit to perform a voltage measurement across the relay coil.<br><br>Click the Supporting Document button below at any time if you need information on the DMM's functions.<br><br> Select Continue when you're ready to proceed.]]>
+</textData>
+
+
+<!-- index 2 -->
+<textData pageId="etc06_003-05" index="2">
+<![CDATA[1. Drag and drop test leads to meter's input terminals.<br><br>2. Click on appropriate rotary setting.<br><br>3. Drag and drop test leads to coil terminals on the relay.<br><br><b>Note: Remove mouse pointer from test lead to have DMM operate properly.</b><br><br>Select Continue when you're ready to proceed.]]>
+</textData>
+
+
+<!-- index 3 -->
+<textData pageId="etc06_003-06" index="3">
+<![CDATA[1. Click the Range button on the DMM to select the 4000 V scale.]]>
+</textData>
+
+
+<!-- index 4 -->
+<textData pageId="etc06_003-08-1" index="4">
+<![CDATA[Good, the DMM is now set to the 4000 V scale.<br><br>Click Continue to proceed.]]>
+</textData>
+
+
+<!-- index 5 -->
+<textData pageId="etc06_003-09" index="5">
+<![CDATA[1. Click the MIN-MAX button on the DMM to select the record feature. <br><br>Click Continue to proceed.]]>
+</textData>
+
+
+<!-- index 6 -->
+<textData pageId="etc06_003-10" index="6">
+<![CDATA[1. Click the Peak MIN-MAX button on the DMM to select the 1ms time interval record setting.<br><br>Click Continue to proceed.]]>
+</textData>
+
+
+<!-- index 7 -->
+<textData pageId="etc06_003-11" index="7">
+<![CDATA[1. Place the cursor over the push button micro-switch on the electrical project board to operate the relay and obtain your DMM measurements.<br><br>2. Move the cursor off the micro-switch to turn off the lights. <br><br>Click Continue to proceed.]]>
+</textData>
+
+
+<!-- index 8 -->
+<textData pageId="etc06_003-12" index="8">
+<![CDATA[1. Observe maximum voltage reading.<br><br>2. Click the MIN-MAX button on the DMM to obtain the minimum readings.<br><br>Click Continue when you are ready to proceed.]]>
+</textData>
+
+
+</simText>

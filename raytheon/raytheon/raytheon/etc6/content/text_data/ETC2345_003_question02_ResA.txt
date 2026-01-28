@@ -1,0 +1,1 @@
+&tMessage=Due to the sensitivity of the meter and normal power supply fluctuations, slight variations in amperage may be observed; however, while performing the amperage measurements the readings obtained were almost identical at all locations in the circuit.<br>Please click <b>Continue</b> to continue.

@@ -1,0 +1,1 @@
+&tMessage=Welcome to the final workstation for this simulation. In this workstation you will:<br><br>1.  Perform resistance measurements<br>2.  Convert the displayed meter values to actual units on ohms <br>3.  Compare your measured values to resistor specifications <br><br>Please select continue.

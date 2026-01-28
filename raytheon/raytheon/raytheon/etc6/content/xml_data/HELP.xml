@@ -1,0 +1,42 @@
+  
+<tech2>
+<data tList="1" item="1" title="Main Menu"  sub_title="" tmpl_type="tmpl2" label="F0: Diagnostics" msg="na" uniqueId="na">
+  <data tList="2" item="1" title="Vehicle Identification"  sub_title="Select one of the following  Model Year(s)" tmpl_type="tmpl2" label="(4) 2004"  msg="help_unavailable.txt"  msg_mood="upset" uniqueId="na"> 
+   </data>
+   
+  <data tList="2" item="2"   tmpl_type="tmpl2" label="(3) 2003" msg="na2"  msg_mood="na" uniqueId="03_1"> 
+    </data>
+  <data tList="2" item="3"   tmpl_type="tmpl3" label="(2) 2002"  msg="help_unavailable.txt"  msg_mood="upset" uniqueId="na">
+ </data>
+  <data tList="2" item="4"   tmpl_type="tmpl3" label="(1) 2001"  msg="help_unavailable.txt"  msg_mood="upset" uniqueId="na"> 
+  </data>
+  <data tList="2" item="5"   tmpl_type="tmpl3" label="(Y) 2000"  msg="help_unavailable.txt"  msg_mood="upset" uniqueId="na"> 
+  </data>
+  <data tList="2" item="6"   tmpl_type="tmpl3" label="(X) 1999"  msg="help_unavailable.txt"  msg_mood="upset" uniqueId="na"> 
+  </data> 
+  <data tList="2" item="7"   tmpl_type="tmpl3" label="(W) 1998" msg="help_unavailable.txt"  msg_mood="upset" uniqueId="na"> 
+  </data>
+  <data tList="2" item="8"   tmpl_type="tmpl3" label="(V) 1997"  msg="help_unavailable.txt"  msg_mood="upset" uniqueId="na"> 
+  </data>
+  <data tList="2" item="9"  tmpl_type="tmpl3" label="(T) 1996"  msg="help_unavailable.txt"  msg_mood="upset" uniqueId="na"> 
+  </data>
+  <data tList="2" item="10"  tmpl_type="tmpl3" label="(S) 1995"  msg="help_unavailable.txt"  msg_mood="upset" uniqueId="na"> 
+  </data>
+  <data tList="2" item="11"  tmpl_type="tmpl3" label="(R) 1994"  msg="help_unavailable.txt"  msg_mood="upset" uniqueId="na"> 
+  </data>
+  <data tList="2" item="12"  tmpl_type="tmpl3" label="(P) 1993"  msg="help_unavailable.txt"  msg_mood="upset" uniqueId="na"> 
+  </data>
+  <data tList="2" item="13"  tmpl_type="tmpl3" label="(N) 1992"  msg="help_unavailable.txt"  msg_mood="upset" uniqueId="na"> 
+  </data>
+  <data tList="2" item="14"  tmpl_type="tmpl3" label="(M) 1991"  msg="help_unavailable.txt"  msg_mood="upset" uniqueId="na"> 
+  </data>
+</data>
+<data tList="1" item="2"  tmpl_type="tmpl3" label="F1: Service Programming System" msg="help_unavailable.txt" msg_mood="think" uniqueId="na"> 
+</data> 
+<data tList="1" item="3"  tmpl_type="tmpl3" label="F2: View Captured Data" msg="help_unavailable.txt" msg_mood="think" uniqueId="na"> 
+</data>
+<data tList="1" item="4"  tmpl_type="tmpl3" label="F3: Tool Options" msg="help_unavailable.txt" msg_mood="think" uniqueId="na"> 
+</data>  
+<data tList="1" item="5"  tmpl_type="tmpl3" label="F4: Getting Started" msg="help_unavailable.txt" msg_mood="think" uniqueId="na"> 
+</data>
+ </tech2>

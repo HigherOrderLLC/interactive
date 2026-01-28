@@ -1,0 +1,1 @@
+&tMessage=<b>Correct!</b><br>The meter is placed in series within the circuit to measure the current flow through the circuit. The circuit must be 'broken' and the meter placed between the opening created to 'close' the circuit allowing current to flow.<br>Please click <b>Continue</b> to continue.

@@ -1,0 +1,1 @@
+&tMessage=Voltage is available before the toggle switch and through the diode in the circuit.<br><br>A path to ground is available after the push-button switch(D) and relay to contact(E).

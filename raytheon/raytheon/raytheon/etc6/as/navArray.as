@@ -1,0 +1,2 @@
+navArray = new Array("etc06INT", "etc06Help", "etc06_001", "etc06_002", "etc06_003", "etc06_004","etc06_005", "etc06_006", "etc06SUM");
+lctr = "<b>Electrical Terminals and Connectors Workstation #06</b>";

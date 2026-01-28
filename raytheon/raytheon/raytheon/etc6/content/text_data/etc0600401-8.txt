@@ -1,0 +1,1 @@
+&tMessage=While the magnetic field collapses, the induced current is in reverse direction to that of the applied voltage.<br><br>The diode gives the current a complete path and flows until the spike is dissipated.<br><br>This prevents damage to components and reduces radio frequency interference.

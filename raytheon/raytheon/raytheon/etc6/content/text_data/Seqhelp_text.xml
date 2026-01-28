@@ -1,0 +1,111 @@
+<!--Note: Hard Carriage Returns and Spaces between the CDATA tags will show up in your messages.-->
+<simText>
+<!-- Index 0 -->
+   <textData pageID="help_coach_01_intro" index="0">
+      <![CDATA[<p align="center">Familiarize yourself with the tools and resources found in this course by clicking on them with your mouse.<br>OR<br>You may begin the course without practicing by clicking on the <b>No Thanks</b> button at any time.</p>                   
+                ]]>
+   </textData>
+
+<!-- Index 1 -->
+   <textData pageID="help_coach_02_intro" index="1">
+      <![CDATA[<p align="center">"Familiarize yourself with the tools and resources found in this course by clicking on them with your mouse.  After you have practiced each, please click on the Next or No Thanks button to continue."<br>OR<br>"You may begin the course without practicing by clicking on the Next or No Thanks button at any time."</p>";]]>
+   </textData>
+
+<!-- Index 2 -->
+   <textData pageID="help_coach_07_tech2" index="2">
+      <![CDATA[ <p align="left"><b>Directions</b><br>Select one of the three buttons<ul><li>Tech2 demonstration<li>Tech2 use<li>Tool Selection</ul></p>
+                    
+            ]]>
+   </textData>
+
+<!-- Index 3 -->
+   <textData pageID="help_coach_04_notes" index="3">
+      <![CDATA[<p align="left"><b>Directions</b><br>The notes button opens a place for you to type notes during the workstation.  It is available throughout the entire course. Select one of the three buttons:<ul><li>Notes demonstration</li><li>Notes use</li><li>Tool Selection</li></ul></p> 
+                    
+            ]]>
+   </textData>
+
+<!-- Index 4 -->
+   <textData pageID="help_coach_05_notes" index="4">
+      <![CDATA[ <p align="left">The notes button opens a place for you to type notes during the workstation.  It is available throughout the entire course.</p>
+                    
+            ]]>
+   </textData>
+
+<!-- Index 5 -->
+   <textData pageID="help_coach_06_notes" index="5">
+      <![CDATA[ <p align="left">By clicking on the "-" symbol, the Notes box collapses.</p>
+                    
+            ]]>
+   </textData>
+
+<!-- Index 6 -->
+   <textData pageID="help_coach_03_notes" index="6">
+      <![CDATA[ Here is where you would type in your notes.
+                    
+            ]]>
+   </textData>
+
+<!-- Index 7 -->
+   <textData pageID="help_coach_08_tech2" index="7">
+      <![CDATA[ Directions:<br>1. The Tech 2 is already connected to the vehicle DLC.<br>2. Turn Tech2 ON by clicking on its power button (PWR).<br>3. Using the Tech2 keys, navigate down to: Diagnostics/Vehicle Identification/2003.<br>4. When finished, click on the tool selection button to continue.
+
+                    
+            ]]>
+   </textData>
+
+<!-- Index 8 -->
+   <textData pageID="help_coach_09_tech2" index="8">
+      <![CDATA[ Please wait while the Tech2 is preparing data...
+                    
+            ]]>
+   </textData>
+
+<!-- Index 9 -->
+   <textData pageID="help_coach_10_tech2" index="9">
+      <![CDATA[ <p align="left"><b>Good job.</b>  You have successfully practiced using the Tech 2.</p>
+
+                    
+            ]]>
+   </textData>
+
+<!-- Index 10 -->
+   <textData pageID="help_coach_11_dmm" index="10">
+      <![CDATA[ <p align="left"><b>Directions</b><br>Select one of the three buttons<ul><li>DMM demonstration<li>DMM use<li>Tool Selection</ul></p>
+                    
+            ]]>
+   </textData>
+
+<!-- Index 11 -->
+   <textData pageID="help_coach_12_dmm" index="11">
+      <![CDATA[ <p align="left"><b>Directions</b><br>1.Drag and drop test leads to meter's input terminals.<br>2. Click on correct rotary switch setting. (AC voltage)<br>3. Drag and drop test leads <b>(Red on square, black on triangle).</b><br>4. When finished, either return to the tool selection or click Next button to continue.<br><b>Note: Remove mouse pointer from test lead to have DMM operate properly.</b></p>
+                    
+            ]]>
+   </textData>
+
+<!-- Index 12 -->
+   <textData pageID="help_coach_13_dmm" index="12">
+      <![CDATA[ <p align="left"><b>Good job.</b>  You have successfully used the DMM.</p><p><br>You may practice with another tool or continue with the course at this time by selecting one of the bottons above or the Next button.</p>
+                    
+            ]]>
+   </textData>
+
+<!-- Index 13 -->
+   <textData pageID="help_coach_07_notes" index="13">
+      <![CDATA[ <p align="left">The Notes box may be moved around the screen at any time.  Click on its blue header or footer, and while holding the mouse down, drag it to another location.</p>
+                    
+            ]]>
+   </textData>
+
+<!-- index 14 -->
+   <textData pageId="dmm_Help" index="14">
+      <![CDATA[<b>Directions</b><br>Select one of the three buttons listed above<ul><li>DMM demonstration<li>DMM use<li>Tool Selection</ul>]]>
+   </textData>
+   
+<!-- index 15 -->
+<textData pageId="dmm_Help2" index="15">
+<![CDATA[<b>Directions</b><br>1.Drag & drop test leads to meter's input terminals.<br>2. Click on correct rotary switch setting. (DC voltage)<br>3. Drag & drop test leads <b>(Red on square, black on triangle).</b>]]>
+</textData>  
+   
+</simText>
+

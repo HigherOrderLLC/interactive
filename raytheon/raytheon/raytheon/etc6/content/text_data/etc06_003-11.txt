@@ -1,0 +1,1 @@
+&tMessage=<b>1.</b> Place the cursor over the push button micro-switch on the electrical project board to operate the relay and obtain your DMM measurements.<br><br><b>2.</b> Move the cursor off the micro-switch to turn off the lights.

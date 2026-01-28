@@ -1,0 +1,1 @@
+&tMessage=I'm sorry. the resistance of a load in a series circuit determines the voltage drop. The total of the voltage drops equals the source voltage.<br><br>Please click <b>Continue</b>.

@@ -1,0 +1,1 @@
+&tMessage=Instructions: <BR>1. Place your cursor over the push button microswitch on the electrical project board to operate the relay and obtain the maximum voltage measurement.<br>2. Move the cursor off the switch to obtain the minimum voltage measurement.

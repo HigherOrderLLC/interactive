@@ -1,0 +1,1 @@
+&tMessage=Great, the DMM is now set to the 1000vscale.  Click Continue to proceed.

@@ -1,0 +1,1 @@
+&tMessage=Please select the component you would like to test by clicking on it. After each test, you will return to this set board to select the next component until all have been tested. You may begin when ready.

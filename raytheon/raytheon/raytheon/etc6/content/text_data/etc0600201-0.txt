@@ -1,0 +1,1 @@
+&tMessage=<b>Great</b>, now that you've powered the circuit and observed the DMM readings, let's take a look at what happens during the circuit's operation.<br><br>Click <b>Continue</b> to take a look.

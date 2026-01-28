@@ -1,0 +1,1 @@
+&tMessage=Does the measured value fall within the specified range of 8 to 12 OHM?

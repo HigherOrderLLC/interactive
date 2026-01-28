@@ -1,0 +1,1 @@
+&tMessage=I'm sorry, the measured resistance of this spark plug exceeds the specified value.  Please try again.

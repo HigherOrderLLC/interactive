@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Simulation</title>
+</head>
+
+<body onLoad="checkInstalled()" style="overflow:hidden;" bgcolor="#FFFFFF" marginwidth=0 marginheight=0 leftmargin=0 rightmargin=0 topmargin=0 bottommargin=0>
+
+
+<!-- ALP FLASH -->
+<div id="FlashLayer" style="position:absolute; width:800px; height:600px; z-index:5">
+<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="resources/swflash.cab#version=6,0,47,0" WIDTH=800 HEIGHT=600 id="alp" VIEWASTEXT>
+       <PARAM NAME=movie VALUE="s_interface_ch.swf">
+       <PARAM NAME=quality VALUE=med>
+       <PARAM NAME=menu VALUE=false>
+       <PARAM NAME=bgcolor VALUE=#FFFFFF>
+       <EMBED src="s_interface_ch.swf" quality=high bgcolor=#FFFFFF id="alp" WIDTH=800 HEIGHT=600 TYPE="application/x-shockwave-flash" PLUGINSPAGE="../plugins/swflash.cab#version=6,0,47,0">
+       </EMBED>
+      </OBJECT>
+ <script language=JavaScript type=text/javascript><!-- //
+  document.all[ "FlashLayer" ].style.top = ( screen.height - 600 ) / 2;
+  document.all[ "FlashLayer" ].style.left = ( screen.width - 800 ) / 2;
+ // --></SCRIPT>
+</div>
+</body>
+</html>

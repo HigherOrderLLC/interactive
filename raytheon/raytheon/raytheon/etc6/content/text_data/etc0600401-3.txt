@@ -1,0 +1,1 @@
+&tMessage=When the push button switch is closed, current flows through the relay coil, generating a magnetic field.<br><br>Current is unable to flow through the diode because it is reverse biased.

@@ -1,0 +1,1 @@
+&tMessage=The resistance of the large lamps ia greater than the resistance of the small lamps, allowing the small lamps to illuminate and preventing the large lamps from illuminating.

@@ -1,0 +1,1 @@
+&tMessage=You are going to perform a resistance measurement on an HVAC ambient air temperature sensor. Select the document that contains the specification range while performing this test.

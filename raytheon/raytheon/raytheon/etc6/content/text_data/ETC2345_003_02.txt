@@ -1,0 +1,1 @@
+&tMessage=To begin, select any location on the set board labeled A-G. Click on the location to "break" or "open" the circuit.<br><br>If you require assistance performing the amperage tests, you may click on the supporting documents button at any time.<br><br>The values you obtain on the DMM will appear in the table below.<br><br>Click <b>Continue</b> when ready.

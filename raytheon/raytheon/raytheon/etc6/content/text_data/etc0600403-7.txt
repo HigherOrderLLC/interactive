@@ -1,0 +1,1 @@
+&tMessage=<b>Correct!</b><br>The arrow on a diode indicates the direction of current flow when the diode is forward biased.<br><br>Click <b>Continue</b> to move on.

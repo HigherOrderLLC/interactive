@@ -1,0 +1,1 @@
+&tMessage=Good job. You have successfully navigated Service Information.<br><br>The Information found in this simulation is for training purposes <b>ONLY</b><br><br><b>NEVER</b> use simulation SI information when diagnosing a vehicle in the "real world".<br><br>You may practice with another tool or start the course by selecting the Return to Tool Selection button.

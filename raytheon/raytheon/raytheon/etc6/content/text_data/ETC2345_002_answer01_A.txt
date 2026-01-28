@@ -1,0 +1,1 @@
+&tMessage=The resistance of the small lamps is greater than the resistance of the large lamps, reducing the current flow through the circuit and preventing the large lamps from illuminating.

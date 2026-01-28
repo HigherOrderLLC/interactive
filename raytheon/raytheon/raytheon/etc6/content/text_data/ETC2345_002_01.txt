@@ -1,0 +1,1 @@
+&tMessage=For this workstation you will:<br>1. Measure the available voltage of a circuit<br>2. Measure the voltage drops within a circuit<br>3. Identify the circuit type and it's characteristics<br><br>Please click <b>Continue</b>.

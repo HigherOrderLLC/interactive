@@ -1,0 +1,1 @@
+&tMessage=Correct. The ambient air temperature sensor resistance tested within the specified range.

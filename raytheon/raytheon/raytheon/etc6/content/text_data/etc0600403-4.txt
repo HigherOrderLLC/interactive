@@ -1,0 +1,1 @@
+&tMessage=direction of current flow when the diode is conducting and current is flowing across the P-N junction

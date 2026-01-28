@@ -1,0 +1,1 @@
+&tMessage=You are going to perform a resistance measurement on a spark plug wire from a 5.3L V8. Select the document that contains the specification range while performing this test.

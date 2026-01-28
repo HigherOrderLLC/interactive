@@ -1,0 +1,1 @@
+&tMessage=<b>Good job!</b><br>Your answer is correct. If you measure for voltage drops within a series circuit, the total of the voltage drops will always equal the source voltage.<br><br>Please click <b>Continue</b>.

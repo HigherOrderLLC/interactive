@@ -1,0 +1,1 @@
+&tMessage=There is only one path for electricity to travel in this circuit. A parallel circuit has two or more paths which to travel.<br><br>Please click <b>Continue</b>.

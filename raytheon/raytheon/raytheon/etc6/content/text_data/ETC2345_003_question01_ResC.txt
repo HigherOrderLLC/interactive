@@ -1,0 +1,1 @@
+&tMessage=I'm sorry, placing the meter parallel to loads in the circuit will cause inaccurate readings. the circuit must be 'broken' and the DMM placed in series within the circuit.<br>Please click <b>Continue</b> to continue.

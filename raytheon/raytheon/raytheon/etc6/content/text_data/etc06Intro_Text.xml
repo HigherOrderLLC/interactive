@@ -1,0 +1,22 @@
+<!--Note: Hard Carriage Returns and Spaces between the CDATA tags will show up in your messages.-->
+
+<simText>
+<!-- index 0 -->
+<textData pageId="etc06INT" index="0">
+<![CDATA[Welcome.  I'm your virtual coach.  This exercise is a pre-requisite for attending: Electrical/Electronics, Terminals and Connectors #18043.04H.  After completing this simulation you will be able to: <BR><BR>1. Perform voltage measurements using the MIN-MAX feature on<br>the DMM.<BR> 2. Demonstrate understanding of the use of a clamping diode <br>in a circuit.<br>It is estimated that it will take 10-15 minutes to complete this session.  Please click Continue. <BR><BR><b>Warning: If you exit this simulation before completion, you MUST restart it when you return.  It is strongly suggested that you take this and each simulation in its entirety.</b>]]>
+</textData>
+
+
+<!-- index 1 -->
+<textData pageId="etc06_1Help" index="1">
+<![CDATA[Take a few moments to familiarize yourself with the DMM before you begin this course. Please start by clicking on it.]]>
+</textData>
+
+
+<!-- index 2 -->
+<textData pageId="etc06INT_2" index="2">
+<![CDATA[For this portion of the exercise in this workstation you will:<BR>1.Measure the voltage across the relay coil while operating the circuit, using the MIN-Max feature of the DMM.<BR>2. Observe the minimum and maximum voltages.<br>3. Determine the effects on a circuit when a relay controls loads.<br><br>Please click continue when you are ready to move forward.]]>
+</textData>
+
+
+</simText>

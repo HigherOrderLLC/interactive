@@ -1,0 +1,1 @@
+&tMessage=<b>Correct!</b><br>This circuit is wired in series, there is only one path for current to flow belween positive and negative.<br><br>Please click <b>Continue</b>.

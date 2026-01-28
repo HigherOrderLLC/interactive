@@ -1,0 +1,1 @@
+&tMessage=During the MIN/MAX measurements there was a steady tone emitted from the DMM.  This indicates:

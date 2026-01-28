@@ -1,0 +1,1 @@
+&tMessage=Please select the proper connector test adapter to use on the camshaft phase actuator. Move the cursor over the test adapters to see a close-up of the end view. Select the adapter to use use clicking on it.

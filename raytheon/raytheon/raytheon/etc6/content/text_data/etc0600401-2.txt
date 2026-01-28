@@ -1,0 +1,1 @@
+&tMessage=When the toggle switch is closed, voltage is available:<ul><li>From the toggle switch to the push button</li><li>From the toggle switch through relay contact(F)</li><li>From the toggle switch through the diode</li></ul>and also from relay contact(A).<br><br>A path to ground is available after the push button switch and to relay contact(E).

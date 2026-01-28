@@ -1,0 +1,1 @@
+&tMessage=Now that you've completed your resistance measurements in this portion of the workstation you will convert the meter readings to base units. Select a resistor by clicking on it. You may select them in any order.

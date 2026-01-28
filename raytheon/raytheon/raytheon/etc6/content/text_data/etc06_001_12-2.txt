@@ -1,0 +1,1 @@
+&tMessage=Although the manufacturer recommends calibration once a year, the tone emitted from the DMM indicates that the measurement has exceeded the DMM setting.

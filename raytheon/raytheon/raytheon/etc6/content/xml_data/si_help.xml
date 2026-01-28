@@ -1,0 +1,33 @@
+<siData>
+<page title="2004 Buick Park Avenue" sub_title="" msgMood="wait" jumpTo="startXML" talkTime="na"   msg="si_help_directions.txt"   tmpl_type="tmpl1"  content_type="xList" content="">
+     <pageItem label="Bulletins By Category" linkId="na" msgMood="upset" jumpTo="talkMode1" talkTime="4" msg="si_help_incorrect.txt" bulletStyle="1"></pageItem>
+     <pageItem label="View All Bulletins"  linkId="na" msgMood="upset" jumpTo="talkMode1" talkTime="4" msg="si_help_incorrect.txt" bulletStyle="1"></pageItem>
+     <pageItem label="Campaigns"   linkId="na" msgMood="upset" jumpTo="talkMode1" talkTime="4" msg="si_help_incorrect.txt" bulletStyle="1"></pageItem>
+     <pageItem label="Preliminary Information" linkId="na" msgMood="upset" jumpTo="talkMode1" talkTime="4" msg="si_help_incorrect.txt" bulletStyle="1"></pageItem>
+     <pageItem label="Preface" linkId="na" msgMood="upset" jumpTo="talkMode1" talkTime="4" msg="si_help_incorrect.txt" bulletStyle="1"></pageItem>
+     <pageItem label="General Information" linkId="na" msgMood="upset" jumpTo="talkMode1" talkTime="4" msg="si_help_incorrect.txt" bulletStyle="1"></pageItem>
+     <pageItem label="HVAC" linkId="na" msgMood="upset" jumpTo="talkMode1" talkTime="4" msg="si_help_incorrect.txt" bulletStyle="1"></pageItem>
+     <pageItem label="Steering" linkId="na" msgMood="upset" jumpTo="talkMode1" talkTime="4" msg="si_help_incorrect.txt" bulletStyle="1"></pageItem>
+     <pageItem label="Suspension" linkId="na" msgMood="upset" jumpTo="talkMode1" talkTime="4" msg="si_help_incorrect.txt" bulletStyle="1"></pageItem>
+     <pageItem label="Driveline/Axle" linkId="na" msgMood="upset" jumpTo="talkMode1" talkTime="4" msg="si_help_incorrect.txt"  bulletStyle="1"></pageItem>
+     <pageItem label="Brakes" linkId="1" msgMood="na" jumpTo="na" talkTime="na" msg="na" bulletStyle="1"></pageItem>
+     <pageItem label="Engine" linkId="na" msgMood="upset" jumpTo="talkMode1" talkTime="4" msg="si_help_incorrect.txt" bulletStyle="1"></pageItem>
+     <pageItem label="Transmission/Transaxle"  linkId="na" msgMood="upset" jumpTo="talkMode1" talkTime="4" msg="si_help_incorrect.txt" bulletStyle="1"></pageItem>
+     <pageItem label="Body" linkId="na" msgMood="upset" jumpTo="talkmode1" talkTime="4" msg="si_help_incorrect.txt" bulletStyle="1"></pageItem>
+     <pageItem label="Restraints" linkId="na" msgMood="upset" jumpTo="talkMode1" talkTime="4" msg="si_help_incorrect.txt" bulletStyle="1"></pageItem>
+     <pageItem label="Vehicle Control Systems" linkId="na" msgMood="upset" jumpTo="talkMode1" talkTime="4" msg="si_help_incorrect.txt" bulletStyle="1"></pageItem>
+     <pageItem label="Accessories" linkId="na" msgMood="upset" jumpTo="talkMode1" talkTime="4" msg="si_help_incorrect.txt" bulletStyle="1"></pageItem>
+</page>
+<!--page1-->
+<page title="Brakes" sub_title=""  msgMood="happy" jumpTo="Brakes" talkTime="na"   msg="si_help_success.txt"  tmpl_type="tmpl1" content_type="xList" content="">
+     <pageItem label="Bulletins By Category" linkId="na" msgMood="think" jumpTo="notApplicable" talkTime="4" msg="si_help_notapplicable.txt" certmsg="si_help_incorrect.txt" bulletStyle="1"></pageItem>
+     <pageItem label="View All Bulletins"  linkId="na" msgMood="think" jumpTo="notApplicable" talkTime="4" msg="si_help_notapplicable.txt" bulletStyle="1"></pageItem>
+     <pageItem label="Campaigns"   linkId="na" msgMood="upset" jumpTo="notApplicable" talkTime="4" msg="si_help_notapplicable.txt" certmsg="si_help_incorrect.txt" bulletStyle="1"></pageItem>
+     <pageItem label="Preliminary Information" linkId="na" msgMood="upset" jumpTo="notApplicable" talkTime="4" msg="si_help_1-2.txt" certmsg="si_help_incorrect.txt" bulletStyle="1"></pageItem>
+     <pageItem label="Hydraulic Brakes" linkId="na" msgMood="na" jumpTo="na" talkTime="na" msg="na" bulletStyle="1"></pageItem>
+     <pageItem label="Disc Brakes" linkId="na" msgMood="upset" jumpTo="notApplicable" talkTime="4" msg="si_help_1-1.txt" certmsg="si_help_incorrect.txt" bulletStyle="1"></pageItem>
+     <pageItem label="Park Brake" linkId="na" msgMood="upset" jumpTo="notApplicable" talkTime="4" msg="si_help_1-1.txt" certmsg="si_help_incorrect.txt" bulletStyle="1"></pageItem>
+     <pageItem label="Antilock Brake System" linkId="na" msgMood="na" jumpTo="na" talkTime="na" msg="na" bulletStyle="1"></pageItem>
+</page>
+
+</siData>

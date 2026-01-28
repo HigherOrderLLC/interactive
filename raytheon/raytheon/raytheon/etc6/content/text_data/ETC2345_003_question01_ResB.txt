@@ -1,0 +1,1 @@
+&tMessage=Your answer is incorrect. If a meter is placed parallel in the circuit, inaccurate readings will occur. The circuit must be 'broken' and the meter leads placed between the opening created to 'close' the circuit, allowing current flow.<br>Please click <b>Continue</b> to continue.

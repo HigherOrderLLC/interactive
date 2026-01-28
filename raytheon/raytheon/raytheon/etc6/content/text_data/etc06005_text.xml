@@ -1,0 +1,21 @@
+<!--Note: Hard Carriage Returns and Spaces between the CDATA tags will show up in your messages.-->
+
+<simText>
+<!-- index 0 -->
+<textData pageId="etc06005_01" index="0">
+<![CDATA[For this portion of the exercise in this workstation you will:<br>1. Measure the voltage across the relay coil while operating the circuit,       using the MIN-MAX feature of the DMM.<br>2. Observe the minimum and maximum voltages.<br>3. Compare the readings to the measurements obtained in the<br>    previous circut (16v MAX; -OL MIN).<br>4. Determine the effects on a circuit when a relay controls loads and a<br>    clamping diode is installed parallel to the relay's coil.<br><br>Please click Continue to proceed.]]>
+</textData>
+
+
+<!-- index 1 -->
+<textData pageId="etc06005_02" index="1">
+<![CDATA[Click the documents below to review some of the electrical characteristics of this circuit.]]>
+</textData>
+
+<!-- index 2 -->
+<textData pageId="etc06005_02" index="2">
+<![CDATA[Click the documents below to review information about diodes. Click Continue to proceed.]]>
+</textData>
+
+
+</simText>

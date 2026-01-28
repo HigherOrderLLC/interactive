@@ -1,0 +1,1 @@
+&tMessage=For this workstation you will:<br><br>1. Use the DMM to measure resistance      of several vehicle compents.<br>2. Use SI documentation to compare          specified values.<br>3. Determine if tested component is            within specification.<br><br>Please click to continue.

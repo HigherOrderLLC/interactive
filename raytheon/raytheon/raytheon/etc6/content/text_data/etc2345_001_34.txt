@@ -1,0 +1,1 @@
+&tMessage=Does the measured value match the specification for spark plug wire resistance, 1000 OHM per foot?

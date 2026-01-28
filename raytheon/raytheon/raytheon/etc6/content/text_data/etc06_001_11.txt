@@ -1,0 +1,1 @@
+&tMessage=Instructions: <BR>1. Click on the MIN-MAX button on the DMM to observe the minimum voltage readings.

@@ -1,0 +1,1 @@
+&tMessage=Does the measured value correspond with the approximate values of 3520 OHM at 68 degrees found on the chart?

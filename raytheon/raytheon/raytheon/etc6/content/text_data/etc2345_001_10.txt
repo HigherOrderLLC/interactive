@@ -1,0 +1,1 @@
+&tMessage=You are going to perform a resistance measurement on a camshaft phase actuator found on a 4.2L I6 engine. Select the document that contains the specification range while performing this test.

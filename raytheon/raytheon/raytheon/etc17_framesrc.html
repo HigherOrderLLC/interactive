@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test JW Player</title>
+</head>
+
+<body>
+<!-- START OF THE PLAYER EMBEDDING TO COPY-PASTE -->
+	<div id="mediaplayer">JW Player goes here</div>
+	
+	<script type="text/javascript" src="../jwplayer/jwplayer.js"></script>
+	<script type="text/javascript">
+		jwplayer("mediaplayer").setup({
+			flashplayer: "../jwplayer/player.swf",
+			provider: "rtmp",
+        	streamer: "rtmp://s21m1wi119zfk2.cloudfront.net:1935/cfx/st/",
+			file: "mp4:etc17_recording.mp4",
+			image: "../raytheon/etc17/etc17_image.png",
+			width:	'615',
+    		height:	'450',
+		});
+	</script>
+</body>
+</html>

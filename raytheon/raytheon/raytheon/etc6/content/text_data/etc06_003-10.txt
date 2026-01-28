@@ -1,0 +1,1 @@
+&tMessage=<b>1.</b> Click the Peak MIN-MAX button on the DMM to select the 1ms time interval record setting.

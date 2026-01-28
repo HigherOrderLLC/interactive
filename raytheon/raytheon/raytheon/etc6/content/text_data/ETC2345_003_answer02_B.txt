@@ -1,0 +1,1 @@
+&tMessage=Current is the same value in all parts of a series circuit.

@@ -1,0 +1,1 @@
+&tMessage=In this workstation you will:<br><br>1. Perform current flow(amperage) measurements on a circuit.<br>2. Identify some characteristics of current in this circuit.<br><br>Please click <b>Continue</b>.

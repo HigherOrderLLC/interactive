@@ -1,0 +1,1 @@
+&tMessage=As the magnetic field collapses, the magnetic lines of force pass over the coil and voltage is induced.

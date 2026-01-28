@@ -1,0 +1,1 @@
+&tMessage=Instructions:<BR>1. Drag and drop test leads to meter's input terminals.<br> 2. Click on appropriate rotary switch setting.<BR>3. Drag and drop test leads to coil terminals on the relay<BR><b>Note: Remove mouse pointer from test lead to have DMM operate properly.</b><BR>Click continue when you are ready.

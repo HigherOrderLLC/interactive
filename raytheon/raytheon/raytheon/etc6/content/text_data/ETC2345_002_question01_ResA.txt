@@ -1,0 +1,1 @@
+&tMessage=<b>Correct!</b><br>The resistance of the small lamps prevents sufficient current flow to illuminate the large lamps.<br><br>Please click <b>Continue</b> to preceed to the second exercise of this workstation.

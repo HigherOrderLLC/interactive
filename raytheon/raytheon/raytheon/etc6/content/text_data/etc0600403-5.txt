@@ -1,0 +1,1 @@
+&tMessage=maximum rated load specification of the diode before diode failure occurs

@@ -1,0 +1,1 @@
+&tMessage=Upon removing the cover from the relay, the relay is found to be defective.  This relay uses a resistor parallel to the coil for suppressing voltage spikes.  The resistor's soldered lead connections have come apart on one side of the resistor.  Click on continue to proceed.

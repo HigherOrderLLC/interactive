@@ -1,0 +1,1 @@
+&tMessage=Correct!  The measurement obtained with the DMM has exceeded the DMM scale setting, also resulting in a reading of OL on the display.

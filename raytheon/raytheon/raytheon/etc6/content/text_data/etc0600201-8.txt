@@ -1,0 +1,1 @@
+&tMessage=The voltage created during the EMI can be very high, damaging components and causing radio frequency interference.<br><br>Voltage spike travels through circuit.

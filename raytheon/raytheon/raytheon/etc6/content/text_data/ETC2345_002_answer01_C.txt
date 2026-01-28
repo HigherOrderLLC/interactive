@@ -1,0 +1,1 @@
+&tMessage=The circuit's fuse rating is not sufficient to power the large lamps and the small lamps. A larger fuse needs to be installed in the circuit to illuminate the large lamps.

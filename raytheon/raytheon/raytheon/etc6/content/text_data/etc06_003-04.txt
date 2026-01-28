@@ -1,0 +1,1 @@
+&tMessage=Click the toggle switch to power up the circuit to perform a voltage measurement across the relay coil.<br><br>Select <b>Continue</b> when you're ready to preceed.

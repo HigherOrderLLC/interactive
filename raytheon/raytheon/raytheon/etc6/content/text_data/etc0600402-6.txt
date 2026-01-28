@@ -1,0 +1,1 @@
+&tMessage=<b>Correct</b>, the clamping diode prevents induced voltage spikes from damaging computers and causing radio frequency interference.<br><br>Please click <b>Continue</b>.

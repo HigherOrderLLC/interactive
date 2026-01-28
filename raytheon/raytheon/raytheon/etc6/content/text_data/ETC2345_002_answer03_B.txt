@@ -1,0 +1,1 @@
+&tMessage=The total of the voltage drop equals the circuit amperage.

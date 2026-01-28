@@ -1,0 +1,1 @@
+&tMessage=<b>Good!</b><br>You've correctly measured the amperages.<br><br>Click <b>Continue</b>.

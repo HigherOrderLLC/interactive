@@ -1,0 +1,1 @@
+&tMessage=<b>Incorrect</b>, the diode provides a controlled path for current to flow when the circuit is opened until the induced voltage dissipates.<br><br>Please click <b>Continue</b>.

@@ -1,0 +1,1 @@
+&tMessage=Which effect does adding a clamping diode parallel to the relay coil have on this circuit?

@@ -1,0 +1,1 @@
+&tMessage=Incorrect. A series-parallel circuit would have one path splitting to multiple paths. This circuit only has one path for electricity to travel.<br><br>Please click <b>Continue</b>.

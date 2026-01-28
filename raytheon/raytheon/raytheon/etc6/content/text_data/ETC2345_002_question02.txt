@@ -1,0 +1,1 @@
+&tMessage=What type of circuit is being deisplayed in this exercise?

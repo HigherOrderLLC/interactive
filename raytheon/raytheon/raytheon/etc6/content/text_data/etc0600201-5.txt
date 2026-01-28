@@ -1,0 +1,1 @@
+&tMessage=Current is now allowed to flow through the bulbs and closed relay contacts.<br><br>The relay coil continues to hold the contacts closed with the magnetic field produced.
