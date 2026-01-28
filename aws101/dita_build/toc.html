@@ -1,0 +1,94 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<base target="contentwin"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright Higher Order LLC 2024"/>
+<meta name="DC.rights.owner" content="(C) Copyright Higher Order LLC 2024"/>
+<title>Introduction to AWS</title>
+<script type="text/javascript" src="assets/jquery-1.4.2.js"><!----></script><script type="text/javascript" src="assets/jquery-ui-1.8.2.custom.min.js"><!----></script><script type="text/javascript" src="assets/jquery.treeview.js"><!----></script><script src="assets/webhelp.js" type="text/javascript"><!----></script><script src="assets/browserDetect.js" type="text/javascript"><!----></script><link href="assets/jquery.treeview.css" type="text/css" rel="stylesheet"/><link href="assets/webhelp_toc.css" type="text/css" rel="stylesheet"/><link href="assets/jquery.treeview.addon.css" type="text/css" rel="stylesheet"/></head>
+<body onload="checkTab()">
+<h1>Ingrid Henkel: Interactive Content</h1>
+    <h2>Introduction to AWS</h2>
+<div id="nav_tree_and_search"><?php $_GET['P'] = "SVN"; include($_SERVER['DOCUMENT_ROOT']."/site-commons/php/userguide_search_dita.php");  ?></div>
+<div id="displayContentDiv"><div id="tab_nav_tree_placeholder"><div id="tab_nav_tree" class="hide">
+<ul id="tree">
+<li id="d10e29"><a href="../aws/what_is_shell.html">What is AWS?</a></li>
+<li id="d10e36"><a href="../aws/product_drag_drop.html">Sort the Services</a></li>
+<li id="d10e44">Distributed Computing Concepts
+<ul>
+<li id="d10e54"><a href="../aws/design_fail_shell.html">Designing for Failure</a></li>
+</li>
+<li id="d10e87">Compute
+<ul>
+<li id="d10e88"><a href="../aws/compute_ops_shell.html">AWS Compute Options</a></li>
+</ul>
+</li>
+<li id="d10e98">Elasticity
+<ul>
+<li id="d10e100"><a href="../aws/elastigraph_shell.html">ElastiGraph: Understanding Elasticity</a></li>
+<li id="d10e105"><a href="../aws/autoscaling_elb_shell.html">The Elasticity Triangle</a></li>
+</ul>
+</li>
+<li id="d10e110">Security at Every Layer
+<ul>
+<li id="d10e113"><a href="../aws/security_shell.html">The Shared Security Model</a></li>
+<li id="d10e118"><a href="../aws/security_self_check_shell.html">The Shared Security Model Knowledge Check</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="d10e124">Getting Started: Putting It All Together
+<ul>
+<li id="d10e141"><a href="../aws/diagram.html">Web Hosting Application: Interactive Graphic</a></li>
+<li id="d10e155"><a href="../aws/build_diagram.html">Buiild Web Hosting Application Interactive Activity</a></li>
+</ul>
+</li>
+</ul>
+
+<p style="background-color: white; padding: 15px;"><span style="color: red; size: 16pt;">To view the Flash content in these pages, download and install the <a href="https://ruffle.rs/downloads">Ruffle extension</a> for your browser. Then set all the toggles to be on.</span></p>
+<img src="ruffle_settings.png" alt="A screenshot of the Ruffle settings."/>
+
+
+</div></div></div><div class="footer"/><script type="text/javascript"><!-- 
+  	$(function() {
+  			$("#tree").treeview({
+  				collapsed: true,
+  				animated: "fast",
+  				control:"#sidetreecontrol",
+  				persist: "location"
+  		});
+  	});
+    function select(){
+      selectLink(this.parentNode.id);
+    }  	     
+    
+function getHTMLPage2Expand(url){
+      var page = url.substr(1);
+      currentPage = page;
+      page = parent.location.search.substr(1).split("&");
+      for (x in page) {
+        var q;
+        q = page[x].split("=");;
+        if(q[0] == 'q'){
+         currentPage = q[1];
+        }
+      }
+      return currentPage;
+   }
+   
+    var aElements = document.getElementById(tree).getElementsByTagName("a");
+    var i;
+    var pathPrefix = parent.location.pathname;
+    var expandPage = getHTMLPage2Expand(parent.contentwin.location.pathname);
+    expandPage = expandPage.replace(pathPrefix, "");
+    for (i = 0; i< aElements.length; i++){
+      aElements[i].onclick = select;
+    }
+    if(parent.location.search != ''){ 
+      setTimeout('expandToTopic(window.location.href, expandPage)',200);
+    }
+//--></script></body>
+</html>

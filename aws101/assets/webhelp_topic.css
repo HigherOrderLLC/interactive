@@ -1,0 +1,324 @@
+body {
+    margin: 0px;
+    font-family: arial, helvetica, sans-serif;
+    line-height:18px;
+    font-size:12px;
+    padding:0 0 0 0.9em;
+}
+a span.navheader_separator,a span.navheader_linktext {
+  display:none;
+}
+
+a{
+/*
+ * Patch 18.08.2010 EXM-18336
+ * color:navy;
+ */
+    color:#0000FF; 
+    text-decoration:underline;
+}
+/*
+ * Patch 18.08.2010 EXM-18336
+ * a:hover{ 
+ *    color:red; 
+ *    text-decoration:underline;
+ * }
+ * 
+ */
+
+table.nav{
+  width:100%;  
+  vertical-align:middle;
+}
+
+table.nav td + td {
+  text-align:right;
+  padding:0 0.4em 0 0;
+}
+
+/* Patch EXM-18336
+ * h1.topictitle1 {
+ *   color:black;
+ *   background-color:#eee;  
+ *   padding:0.3em 0 0 0.2em;
+ *   margin:0 0.3em 0 0;
+}
+ */
+h1.topictitle1 {
+  color:#FFFFFF;
+  background-image:url(images/tab-gradient.png);
+  background-repeat:repeat-x;
+  background-color:#FF9000;
+  font-size: 20px;  
+  padding:0.3em 0 0.3em 0.3em;
+}
+
+.navfooter{
+  border-top:1px solid #eee;
+  margin:3em 0 0 0; 
+  padding:0.4em 0 0 0;
+}
+
+ul li {
+  line-height:18px;
+}
+
+div.footer{  
+  line-height:24px;
+  text-align: center;
+  bottom: 0;
+}
+
+div.footer span.oXygenLogo img{  
+  vertical-align:bottom;
+  border:0;
+}
+div.footer span.xmlauthor{
+  margin-bottom:14px;
+}
+
+
+
+/*----------------*/
+/*The copyright.*/
+div, td{
+    font-size:10pt;
+}
+
+div.copyright{
+    font-size:8pt;
+    padding-top:1em;
+}
+#nav_tree div.copyright{
+    padding-top:0.2em;
+    padding-left:1em;
+}
+
+/* Makes the titles stand-out */
+h1.title,
+h2.title{
+    color:#000000;
+    background-color:#FC0;
+    padding: 0.2em;
+}
+h1.title{
+    color:white;
+  background-color:#FF9000;
+  font-size: 20px;  
+  padding:0.3em 0 0.3em 0.3em;
+  margin:0 0.3em 0 0;
+}
+
+
+/* The navigation tree classes */
+#nav_tree > ul{
+    border-top:1px solid gray;
+    border-bottom:1px solid gray;
+    margin-top: 0em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    min-width:300px;
+    padding: 1em;
+    font-size:10pt;
+}
+
+#content{
+    margin-left:1em;
+    border-left:2px solid gray;
+    padding-left:1em;
+}
+
+#nav_tree ul ul{
+    margin:0;
+    padding:0;
+}
+
+#nav_tree form{
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+    padding-right:0.5em;
+    text-align:right;
+}
+#nav_tree form input{
+    font-size:8pt;
+}
+
+#nav_tree li {
+    margin-top: 0.2em;
+    margin-left: 1em;
+    list-style-type:none;
+}
+
+/* The links */
+#nav_tree a.nav_tree{
+    color:black;
+    background-color:inherit;
+}
+
+/* The selected page. */
+#nav_tree li.nav_tree_last_open_book > a{
+    background-color: #333399;
+    color:white;
+    text-decoration:none;
+}
+
+#nav_tree li:before{
+    display:inline;
+    vertical-align:text-bottom;
+    padding-top:0.2em;
+    padding-right:0.2em;
+}
+
+
+/* Icons before the links.*/
+#nav_tree li.nav_tree_open_book:before,
+#nav_tree li.nav_tree_last_open_book:before{
+    display:inline;
+    content:url('img/open_book.gif');
+}
+
+#nav_tree li.nav_tree_book:before{
+    display:inline;
+    content:url('img/book.gif');
+}
+
+#nav_tree li.nav_tree_page:before{
+    display:inline;
+    content:url('img/page.gif');
+}
+
+/* Title displayed over the tree area.*/
+#nav_tree p.nav_title { 
+    font-size: 14pt; 
+    font-weight: bold; 
+    margin-bottom: 0.5px; 
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+#nav_tree p.nav_title a{ 
+    text-decoration:none;
+    color:black;
+    background-color:inherit;
+}
+
+/* The path in the document displayed over the content.*/
+div.nav_path{
+    text-align:right;
+}
+
+/*----------------
+    The footer. 
+-----------------*/
+.footer {
+    margin-top:3em;
+}
+
+.redX {
+    color:red;
+    background-color:inherit;
+    font-size:1.2em;
+}
+
+.oXygenLogo {
+    color:#1166DD;
+    background-color:inherit;
+    font-weight:bold;
+    font-size:1.2em;
+}
+
+.highlight { 
+    background-color: #FFFF88; 
+}
+.button {
+    /*background-color:#F0F0F0;
+    padding-right: 5px;
+    padding-left: 5px;*/
+}
+.variable {
+    /*font-style:italic;
+    font-weight:700;*/
+}
+.codeblock{
+	width: 80%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	background-color:#EEE;
+	border: 1px solid #999;
+}
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+.hint{
+	background-color: #D0E8E8;
+	padding: 5px;
+}
+.flash {
+	border: 1px solid #000000;
+	padding:0px;
+	width: 800px;
+	height: 600px;
+}
+/*toggle answers off default state*/
+.answer{
+	display:none;
+}
+.toggleanswer{
+	margin-top: 5px;
+	display:block;
+}
+h2.title.sectiontitle{
+	background-color:#CCC;
+}
+h2.title.topictitle2{
+	background-color:#E6E6E6;
+}
+
+/** Styles added by Evan Brown, 7/8/2011 **/
+
+/** Format Objectives list heading **/
+ul.module_objectives_list_heading {
+  border-bottom: solid 1px #CCC;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/** Add the medium (30px wide) AWSU hat logo as the Learning Objective background **/
+div.lcObjectives {
+  /*background: url(images/awsu_hat_30px.jpg) no-repeat;*/
+  padding-left: 40px;
+  color: black;
+}
+
+/** Add spacing and border to Learning Objectives title text **/
+div.lcObjectives > h2.sectiontitle, h2.title.sectiontitle {
+  background: #ffffff;
+  color: #000000;
+  border-bottom: dotted 1px #CCC;
+  padding-left: 0;
+}
+
+/** Item in list of steps **/
+.li.step {
+  margin: 0 0 12px 0;
+}
+
+/* remove titles from presentation pages*/
+.presentation_title{
+display: none;
+}
+
+/** Added by Evan Brown, 1/17/2012 **/
+
+/** Increase spacing between a task's bullet items **/
+.lcInstruction ul li {
+	  margin: 0 0 10px 0;
+}
