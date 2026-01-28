@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingrid Henkel AWS Explainer Videos</title>
+</head>
+<body>
+    <h1>AWS Explainer Videos</h1>
+    
+    <!-- Container for the video -->
+    <div id="video-container"></div>
+
+    <script>
+        // Function to get query parameter by name
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Get the 'video' parameter from the URL
+        const videoId = getQueryParam('video');
+
+        if (videoId) {
+            // Create an iframe element
+            const iframe = document.createElement('iframe');
+            iframe.width = "560";
+            iframe.height = "315";
+            iframe.src = `https://www.youtube.com/embed/${videoId}`;
+            iframe.title = "YouTube video player";
+            iframe.frameBorder = "0";
+            iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+            iframe.allowFullscreen = true;
+
+            // Append the iframe to the container
+            document.getElementById('video-container').appendChild(iframe);
+        } else {
+            document.getElementById('video-container').innerText = "No video ID provided in the URL.";
+        }
+    </script>
+</body>
+</html>
