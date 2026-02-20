@@ -1,0 +1,103 @@
+﻿<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Inworld Chat</title>
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<!--<iframe src="https://arcade.inworld.ai/characters/TfR6mZW2TFDCTFiN" height="900" width="1600" />-->
+</head>
+<style>
+    body {
+        background-color: black;
+        color: bisque;
+    }
+</style>
+<body>
+<!--<iframe src="https://arcade.inworld.ai/characters/TfR6mZW2TFDCTFiN" height="900" width="1600"></iframe>-->
+
+<a href="https://arcade.inworld.ai/characters/TfR6mZW2TFDCTFiN">This</a> is the Inworld chatbot.
+
+<iframe id="ltiContentFrame" width="800" height="1000" frameborder="0" scrolling=no></iframe>
+<iframe src="square2.svg" id="square" width="1" height="1" frameborder="0" scrolling=no></iframe>
+
+<script>
+
+//Preflight
+
+fetch('https://api.inworld.ai/', {
+    method: 'POST',
+    mode: 'no-cors', // Allows the request to bypass CORS, but limits the response
+    headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer YjU5ZW5mWDVpa3pBWXlDS0pGeHF2UWdvV0lBWmhmTmY6alVjMW5zWDA0TE9iR0ZJaFNQdFBONkl5am03UXBEQlFqNlFlTjN4RElLV20yZW5ZYnBuM0ZVR1dXWmgyOTYzUg==', // If the API requires authentication
+    },
+    body: JSON.stringify({
+        // Your POST data here
+    })
+})
+.then(response => {
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+    return response.json();
+})
+.then(data => {
+    console.log('Success:', data);
+})
+.catch(error => {
+    console.error('Error:', error);
+});
+
+
+// end preflight
+   function log(mutations){
+        console.log("callback function called")
+        for (let mutation of mutations){
+            console.log("Mutation is...")
+            console.log(mutation)
+            /*
+            if (mutation.type == 'childList'){
+                console.log("mutation");
+                console.log(mutation);
+            }
+            */
+        }
+    console.log("disconnecting observer");
+    observer.disconnect();
+   }
+   // Function to check the iframe content and monitor for changes
+   function monitorIframe() {
+        // Get the iframe element
+        console.log("SVG called monitorIFrame.")
+        var iframe = document.getElementById('ltiContentFrame'); // Replace with the specific selector for your iframe if necessary
+
+        let options = {
+            childList: true,
+            attributes: true,
+            characterData: true,
+            subtree: true,
+            //attributeFilter: ['attr1', 'attr2'],
+            //attributeOldValue: false,
+            //characterDataOldValue: false
+        }
+
+        // Ensure the iframe is accessible
+        if (iframe && iframe.contentDocument) {
+            console.log("iframe exists")
+            var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+            console.log("iFrame doc is...")
+            console.log(iframeDoc)
+            // Create a MutationObserver to monitor changes in the iframe's body
+            console.log("Creating mutation observer")
+            var observer = new MutationObserver(log);
+            observer.observe(iframeDoc,options);
+        }
+    }
+
+// Call the function to start monitoring
+//console.log("calling monitor")
+//monitorIframe();
+
+</script>
+</body>
+</html>

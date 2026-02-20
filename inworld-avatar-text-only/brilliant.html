@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Function Slider with D3.js</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        #plot {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <style>
+        body {
+            background-color: pink;
+        }
+    </style>
+    <h2>Quadratic Function: f(x) = ax² + bx + c</h2>
+    <label for="aSlider">Adjust the value of <em>a</em>:</label>
+    <input type="range" id="aSlider" min="-5" max="5" value="1" step="0.1" oninput="updatePlot()">
+    <span id="aValue">1</span>
+
+    <div id="plot"></div>
+
+    <script>
+        // Set up the SVG and margins
+        const margin = { top: 20, right: 30, bottom: 40, left: 40 },
+            width = 500 - margin.left - margin.right,
+            height = 400 - margin.top - margin.bottom;
+
+        const svg = d3.select("#plot")
+            .append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", `translate(${margin.left},${margin.top})`);
+
+        // Set up the x and y scales
+        const xScale = d3.scaleLinear().domain([-10, 10]).range([0, width]);
+        const yScale = d3.scaleLinear().domain([-100, 100]).range([height, 0]);
+
+        // Create the axes
+        svg.append("g")
+            .attr("transform", `translate(0,${height})`)
+            .call(d3.axisBottom(xScale));
+
+        svg.append("g")
+            .call(d3.axisLeft(yScale));
+
+        // Initial values
+        let a = 1, b = 0, c = 0;
+
+        // Function to generate data points for the quadratic function
+        function generateData(a, b, c) {
+            const data = [];
+            for (let x = -5; x <= 5; x += 0.1) {
+                const y = a * x * x + b * x + c;
+                data.push({ x: x, y: y });
+            }
+            return data;
+        }
+
+        // Initial line plot
+        const line = d3.line()
+            .x(d => xScale(d.x))
+            .y(d => yScale(d.y));
+
+        const path = svg.append("path")
+            .datum(generateData(a, b, c))
+            .attr("fill", "none")
+            .attr("stroke", "blue")
+            .attr("stroke-width", 2)
+            .attr("d", line);
+
+        // Update the plot when the slider is moved
+        function updatePlot() {
+            a = parseFloat(document.getElementById('aSlider').value);
+            document.getElementById('aValue').innerText = a;
+
+            // Generate new data and update the line
+            const newData = generateData(a, b, c);
+            path.datum(newData)
+                .attr("d", line);
+        }
+    </script>
+</body>
+</html>

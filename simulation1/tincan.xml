@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><tincan xmlns="http://projecttincan.com/tincan.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<activities>
+		<activity id="urn:articulate:storyline:5ywfobKDTyk" type="http://adlnet.gov/expapi/activities/course">
+			<name lang="en-us">simulation-example</name>
+			<description lang="en-us"/>
+			<launch lang="en-us">index_lms.html</launch>
+		</activity>
+		<activity id="urn:articulate:storyline:5ywfobKDTyk/6UfksLy4WDa" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="en-us">Click the Managed Desktop group</name>
+			<description lang="en-us">Click the Managed Desktop group</description>
+		</activity>
+		<activity id="urn:articulate:storyline:5ywfobKDTyk/656xHdyqdnv" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="en-us">Click the text box</name>
+			<description lang="en-us">Click the text box</description>
+		</activity>
+		<activity id="urn:articulate:storyline:5ywfobKDTyk/6OcGzjHNtco" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="en-us">Type media</name>
+			<description lang="en-us">Type media</description>
+		</activity>
+		<activity id="urn:articulate:storyline:5ywfobKDTyk/6OcGzjHNtco/6BAe0WSFHhv" type="http://adlnet.gov/expapi/activities/cmi.interaction">
+			<name lang="en-us">Text Entry Interaction</name>
+			<description lang="en-us">Text Entry Interaction</description>
+			<interactionType>fill-in</interactionType>
+		</activity>
+		<activity id="urn:articulate:storyline:5ywfobKDTyk/6pPKuxWBico" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="en-us">Click the media services list item</name>
+			<description lang="en-us">Click the media services list item</description>
+		</activity>
+		<activity id="urn:articulate:storyline:5ywfobKDTyk/6jKUv7ujoxK" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="en-us">Click the Marketplace - Microsoft Azure document window</name>
+			<description lang="en-us">Click the Marketplace - Microsoft Azure document window</description>
+		</activity>
+		<activity id="urn:articulate:storyline:5ywfobKDTyk/6rGBUWfMp4d" type="http://adlnet.gov/expapi/activities/module">
+			<name lang="en-us">Double-Click the group</name>
+			<description lang="en-us">Double-Click the group</description>
+		</activity>
+	</activities>
+</tincan>

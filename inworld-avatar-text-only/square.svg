@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="0" y="0" width="10" height="10"/>
+  <script>
+  var iframe = document.getElementById('ltiContentFrame');
+  var course = "https://cloud.scorm.com/content/courses/VBDHH8M7AG/new-employee-onboarding-xapi-vQHgwl6417043c7e-d5ac-40a0-8ef6-347711ebdfa7/0/index.html?actor=%7B%22name%22%3A%5B%22GivenNameNotProvided%20FamilyNameNotProvided%22%5D%2C%22account%22%3A%5B%7B%22accountServiceHomePage%22%3A%22http%3A%2F%2Fcloud.scorm.com%22%2C%22accountName%22%3A%22VBDHH8M7AG%7CLearnMoodle_fca90ff7-3ad6-48b6-9a05-b6ef409f450c%3A2%22%7D%5D%2C%22objectType%22%3A%22Agent%22%7D&endpoint=https%3A%2F%2Fcloud.scorm.com%2Flrs%2FVBDHH8M7AG%2F&auth=Basic%20OjhhOGNjODgzLWUzZDUtNGVlNS05NWRmLWNhZjkwYWUwZWFmMA%3D%3D&content_token=32685460-32b0-418e-9be2-b2b8d48af07a&externalRegistration=Sdpx0y8ZfWH4UvcX0OwOFS75IZVCmTIu0quYN41myXadlT2etuZr7Sp3hLZ2ZvWcwEoSlmSdrBBP5CXVHhlrSU2TCiMUytl6RAtyTf5PIxXhJxqt1vta962C2TkbIh4&activity_id=http%3A%2F%2F6hWagkd9SR-3Liyaq1xnC4_oIZ_4yCpH_rise&registration=dda75b63-6c8a-479d-8777-6d13a079003e&externalConfiguration=eyOyeaou45-pO0k5NBJtg9Gsp0GP-9lu8dZAIsPl3nwo1gKWBlE2sYCw090xemkWT0d2rO30lPS5bdVRcvZy5xAiJNCyaPFJQw&grouping=http%3A%2F%2F6hWagkd9SR-3Liyaq1xnC4_oIZ_4yCpH_rise&content_endpoint=https%3A%2F%2Fcloud.scorm.com%2Flrs%2FVBDHH8M7AG%2Fcontent%2F#/";
+  iframe.src = course;
+  </script>
+</svg>
